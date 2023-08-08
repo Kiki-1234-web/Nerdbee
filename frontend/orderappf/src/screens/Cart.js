@@ -12,9 +12,13 @@ export default function Cart() {
 }
 //individual cards to be viewed in full screen
 //customize search bar
-//PR raise
 //change already saved data
 //orders page which will display the item order id and other details
 //if (token generated) logged in then show navbar with cart and logout option
 //else show navbar with login and signup options
 //payment gateway
+//very slow login and signup
+//very slow carousal update
+//add google map to address
+// check out button to redirect on orders page 
+//*** if payment stripe added redirect it to payments page and then my orders page

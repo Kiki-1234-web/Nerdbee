@@ -1,44 +1,36 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel, Form, Button } from 'react-bootstrap';
+import React from 'react'
 
 export default function Carousal() {
   return (
     <div>
-      <Carousel id="carouselExampleControls">
-        <Carousel.Item>
-          <img
-            src="https://source.unsplash.com/random/900×700/?books"
-            className="d-block w-100"
-            alt="..."
-            style={{ maxHeight: '500px' }}
-          />
-          <Carousel.Caption>
-            <Form className="d-flex">
-              <Form.Control type="search" placeholder="Search" className="me-2" aria-label="Search" />
-              <Button variant="outline-success" className="text-light bg-dark" type="submit">
-                Search
-              </Button>
-            </Form>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            src="https://source.unsplash.com/random/900x700/?books"
-            className="d-block w-100"
-            alt="..."
-            style={{ maxHeight: '500px' }}
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            src="https://source.unsplash.com/random/900x700/?books"
-            className="d-block w-100"
-            alt="..."
-            style={{ maxHeight: '500px' }}
-          />
-        </Carousel.Item>
-      </Carousel>
+      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" style={{objectFit:'contain !important'}}>
+  <div className="carousel-inner" id='carousel'>
+  <div className="carousel-caption" style={{zIndex:"10"}}> 
+  {/* to reflect search bar on carousel or else it'll disapper somewhere beneath it. */}
+  <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-light bg-secondary" type="submit">Search</button>
+    </form>
+  </div>
+    <div className="carousel-item active">
+      <img src="https://source.unsplash.com/random/900×700/?books" className="d-block w-100" style={{maxHeight:'500px'}} alt="..."/>
     </div>
-  );
+    <div className="carousel-item">
+      <img src="https://source.unsplash.com/random/900×700/?books" className="d-block w-100" style={{maxHeight:'500px'}} alt="..."/>
+    </div>
+    <div className="carousel-item">
+      <img src="https://source.unsplash.com/random/900×700/?books" className="d-block w-100" style={{maxHeight:'500px'}} alt="..."/>
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+  )
 }

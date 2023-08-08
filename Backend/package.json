@@ -4,7 +4,7 @@
   "description": "A mern stack project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon index"
   },
   "author": "Koushiki Nagar",
   "license": "ISC",
@@ -14,7 +14,9 @@
     "express": "^4.18.2",
     "express-validator": "^6.14.0",
     "jsonwebtoken": "^9.0.1",
-    "mongoose": "^6.6.1",
+    "mongoose": "^6.6.1"
+  },
+  "devDependencies": {
     "nodemon": "^3.0.1"
   }
 }

@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router()
 
 const User = require('../models/User')
+// Express validator for imposing conditions on input data
 const { body, validationResult } = require('express-validator');
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");

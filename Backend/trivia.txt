@@ -1,0 +1,117 @@
+Frontend
+
+GIT TOKEN
+
+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
+
+git remote set-url origin https://Kiki-1234-web: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@github.com/Kiki-1234-web/Nerdbee.git
+
+git push origin main
+
+1. We use Router inside which routes are used to redirect component to the matching url.
+<Router/>
+<div/>
+<Routes/>
+<Route exact path=''/>
+2. Link works as anchor tag.
+3. We write js under html and then again html under js in jsx as per our need.
+4. Since 'div' is not inline we can use 'className='d-inline'
+5. Node version is less than 13 then import will not work. Es-6 has import feature hence frontend has import.
+6. Package-lock jsonThe package-lock.json is a lockfile that holds information on the dependencies or packages installed for a node.js project, including their exact version numbers. 
+Its objective is to offer an immutable version of package.json, so you may fetch an earlier version of your code and end up with the same node_modules folder. 
+
+Q1 - console.log(2 + '2' - 1); = string-'22'-1=number=21?
+
+Q2 - function isArray(variable) {
+    return Array.isArray(variable);
+}
+
+
+Q3 - for (var i = 0; i < 5; i++) {
+    setTimeout(function() {
+        console.log(i);
+    }, 1000);
+}
+copy of var 
+1 2 3 4 5 
+
+Q4 - const original = { a: 1, b: 2 };
+const copy = { ...original };
+// or
+const copy = Object.assign({}, original);
+{a: 1, b:2}
+same output for both
+
+Q5 - Given an array, arr = [1,2,3,4,5], you need to return the value "54321". Write the code for the same?
+ for(int i=arr.length()-1; i>=0; i--){
+    console.log(arr[i]);
+ }
+
+Q6 - const obj = {
+    "status": "Remarks Present",
+    "requestId": "ER-2190484756",
+    "module": "VALIDATION_ERROR",
+    "stage": "system validation"
+  };
+Print the size of an object?
+obj.size()?
+4
+
+index.css
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+#carousel{
+  max-height: 500px;
+}
+/* Add this CSS to your styles */
+.container {
+  /* Your existing container styles here */
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  flex: 1;
+  padding: 10px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.card-item {
+  /* Your card item styles here */
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* Card.css */
+.card-body {
+  height: 150px; /* Set the fixed height for the card body */
+  overflow: hidden; /* Hide any overflowing content */
+  transition: height 0.3s; /* Add a smooth transition effect */
+}
+
+.card-body.expanded {
+  height: auto; /* Expand the card body to show the full content */
+}
+.card-text{
+  font-size: 60px;
+}

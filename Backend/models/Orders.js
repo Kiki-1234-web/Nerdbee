@@ -1,4 +1,3 @@
-// A model is a wrapper for your schema which is used to import data into mongodb
 const mongoose = require('mongoose');
 const { Document, Schema, model, Query, Model } = require('mongoose');
 
@@ -15,7 +14,11 @@ const UserSchema = new Schema({
         type:String,
         required:true
     },
-    password:{
+    book:{
+        type:String,
+        required:true
+    },
+    price:{
         type:String,
         required:true
     },
@@ -27,3 +30,4 @@ const UserSchema = new Schema({
 
 module.exports = mongoose.model('user', UserSchema)
 
+// Reflect the saved data on my orders page
