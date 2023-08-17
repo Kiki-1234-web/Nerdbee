@@ -5,6 +5,13 @@ GIT TOKEN
 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
 
 git remote set-url origin https://Kiki-1234-web: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@github.com/Kiki-1234-web/Nerdbee.git
+
+NEW TOKEN
+
+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    
+
+git remote set-url origin https://Kiki-1234-web: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@github.com/Kiki-1234-web/Nerdbee.git
+
 Username for 'https://github.com': Kiki-1234-web
 Password for 'https://Kiki-1234-web@github.com': koushikinagar123
 
