@@ -29,6 +29,7 @@ return (
   <div>
     <div>
       <Navbar />
+      {/* Know how to send props of home page to components like carousal */}
     </div>
     <div>
     <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel" style={{objectFit:'contain !important'}}>

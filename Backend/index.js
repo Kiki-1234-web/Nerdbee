@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express();
+// const cors = require('cors')
 const mongoDB = require('./db')
+//instead of cors use this
 app.use((req, res, next)=>{
     res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
     res.header(
@@ -18,6 +20,6 @@ app.get('/', (req,res)=>{
     console.log("hello world")
 })
 app.listen(5000, ()=>{
-    console.log("server is listening on port 5000")
+    console.log("server is listening on port 5000") // 8000 was here
 })
 
