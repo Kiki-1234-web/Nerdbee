@@ -82,7 +82,7 @@ return (
                          /> */}
 
                          <Card bookItem={filterItems}>
-                         options = {filterItems.options}
+                         {/* options = {filterItems.options} */}
                          </Card>
                       </div>
                     ))}

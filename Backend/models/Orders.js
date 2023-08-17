@@ -1,33 +1,30 @@
-const mongoose = require('mongoose');
-const { Document, Schema, model, Query, Model } = require('mongoose');
+const mongoose = require('mongoose')
 
-const UserSchema = new Schema({
-    name:{
-         type:String,
-        required:true
+const { Schema } = mongoose;
+
+const OrderSchema = new Schema({
+    email: {
+        type: String,
+        required: true,
+        unique: true
     },
-    location:{
-        type:String,
-        required:true
-    },
-    email:{
-        type:String,
-        required:true
-    },
-    book:{
-        type:String,
-        required:true
-    },
-    price:{
-        type:String,
-        required:true
-    },
-    date:{
-        type:Date,
-        default:Date.now
+    order_data: {
+        type: Array,
+        required: true,
     }
+    // rating: {
+    //     type: Number,
+    //     required: true
+    // },
+    // moviename: {
+    //     type: String,
+    //     required: true
+    // },
+    // review: {
+    //      type: String,
+    //      required: true
+    // }
+
 });
 
-module.exports = mongoose.model('user', UserSchema)
-
-// Reflect the saved data on my orders page
+module.exports = mongoose.model('order', OrderSchema)

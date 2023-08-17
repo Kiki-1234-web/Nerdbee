@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A mern stack project",
   "main": "index.js",
+ 
   "scripts": {
     "server": "nodemon index"
   },
